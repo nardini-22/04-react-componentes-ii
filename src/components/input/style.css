@@ -1,0 +1,96 @@
+:root {
+  --purple: #917bff;
+  --purple-100: #7a60fc;
+  --pink: #d478ff;
+  --pink-100: #c251f7;
+  --green: #01d26c;
+}
+
+input {
+  background: #ebf4f2;
+  border: none;
+  border-radius: 10px;
+  margin-bottom: 20px;
+  font-size: 16px;
+  display: block;
+  width: 100%;
+  height: 35px;
+  position: relative;
+  text-indent: 10px;
+}
+
+input::placeholder {
+  text-indent: 10px;
+}
+
+input:focus::placeholder{
+  color: transparent;
+}
+
+input:focus{
+  caret-color: var(--purple);
+  border: 2px solid var(--green);
+  outline: none;
+}
+
+.desc {
+  max-width: 240px;
+  padding-right: 60px;
+  border: 2px solid transparent;
+}
+
+.input:focus{
+  text-indent: 10px;
+}
+
+
+.submit {
+  border-radius: 8px;
+  border: none;
+  width: 100%;
+  color: #ffffff;
+  background: linear-gradient(90deg, var(--purple), var(--pink) 100%);
+  font-size: 1.2rem;
+  padding: 1rem 2rem;
+  cursor: pointer;
+  height: 50px;
+  margin: 0 auto;
+  margin-top: 30px;
+  display: block;
+  position: relative;
+  -webkit-box-shadow: 10px 10px 23px -8px rgba(0, 0, 0, 0.37);
+  -moz-box-shadow: 10px 10px 23px -8px rgba(0, 0, 0, 0.37);
+  box-shadow: 10px 10px 23px -8px rgba(0, 0, 0, 0.37);
+}
+
+.submit:active {
+  background: linear-gradient(90deg, var(--purple-100), var(--pink-100) 100%);
+}
+
+label {
+  color: #466e66;
+  display: block;
+}
+
+.icon-container {
+  height: 75px;
+  width: 75px;
+  border-radius: 100%;
+  margin-left: auto;
+  margin-right: auto;
+  display: flex;
+  background: linear-gradient(90deg, var(--purple), var(--pink) 100%);
+  align-items: center;
+  margin-top: -55px;
+}
+
+.icon {
+  color: white;
+  margin: auto;
+  font-size: 35px;
+}
+
+.error:focus {
+  border: 1px solid red !important;
+  text-indent: 10px;
+}

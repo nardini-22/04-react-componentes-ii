@@ -1,0 +1,194 @@
+:root {
+  --green: #01d26c;
+  --red: #FF5352;
+}
+
+.overlay {
+  position: absolute;
+  height: 100vh;
+  width: 100vw;
+  background: rgb(0, 0, 0, 0.5);
+  top: 0;
+  left: 0;
+}
+
+.modalContainer {
+  position: relative;
+  max-width: 600px;
+  max-height: 500px;
+  background: #ffffff;
+  width: 100%;
+  height: 100%;
+  margin: 20px auto 0;
+  border-radius: 10px;
+}
+
+.animateBottom {
+  position: relative;
+  animation: animateBottom 0.4s;
+}
+
+@keyframes animateBottom {
+  from {
+    bottom: -300px;
+    opacity: 0;
+  }
+
+  to {
+    bottom: 0;
+    opacity: 1;
+  }
+}
+
+.tooltip {
+  position: relative;
+  display: inline-block;
+}
+
+.tooltipText {
+  visibility: hidden;
+  width: 120px;
+  background: #646363;
+  color: #ffffff;
+  text-align: center;
+  border-radius: 6px;
+  padding: 5px 0;
+
+  position: absolute;
+  z-index: 1;
+  top: -5px;
+  left: 105%;
+}
+
+.tooltip:hover .tooltipText {
+  visibility: visible;
+}
+
+.header {
+  background: var(--green);
+  color: white;
+  border-top-left-radius: 10px;
+  border-top-right-radius: 10px;
+  text-align: center;
+}
+
+h1 {
+  font-size: 45px;
+}
+
+h5 {
+  text-align: center;
+  color: var(--green);
+  font-size: 15px;
+}
+
+.exit {
+  color: #ffffff;
+  background: transparent;
+  border: none;
+  cursor: pointer;
+  position: absolute;
+  top: 8px;
+  right: 16px;
+}
+
+.iconExit {
+  font-size: 20px;
+}
+
+.iconExit:active {
+  color: #d8d7d7;
+}
+
+.iconCircleCheck {
+  color: var(--green);
+  font-size: 75px;
+  display: block;
+  margin-left: auto;
+  margin-right: auto;
+}
+
+.iconCheck {
+  color: var(--green);
+}
+
+ul {
+  list-style: none;
+  padding: 0 40px;
+}
+
+.character {
+  position: relative;
+}
+
+.character p {
+  position: absolute;
+  top: -8px;
+  right: 0;
+}
+
+.errorH {
+    background: var(--red);
+}
+
+.iconError{
+    color: var(--red);
+    font-size: 75px;
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+}
+
+.iconContainer {
+    height: 75px;
+    width: 75px;
+    border: 10px solid var(--red);
+    border-radius: 100%;
+    margin-left: auto;
+    margin-right: auto;
+    display: flex;
+}
+
+.bounce {
+    animation-name: bounce;
+    animation-duration: .5s;
+    animation-delay: 0.25s;
+}
+
+@keyframes bounce {
+    0%{
+        transform: translateX(0px);
+        timing-function: ease-in;
+    }
+    37%{
+        transform: translateX(5px);
+        timing-function: ease-out;
+    }
+    55%{
+        transform: translateX(-5px);
+        timing-function: ease-in;
+    }
+    73%{
+        transform: translateX(4px);
+        timing-function: ease-out;
+    }
+    82%{
+        transform: translateX(-4px);
+        timing-function: ease-in;
+    }
+    91%{
+        transform: translateX(2px);
+        timing-function: ease-out;
+    }
+}
+
+#error{
+    text-align: center;
+    color: var(--red);
+    font-size: 15px;
+}
+
+p{
+    text-align: center;
+    font-size: 15px;
+}
