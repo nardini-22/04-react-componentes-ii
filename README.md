@@ -1,5 +1,7 @@
 # 04-react-componentes-ii
 
+**Project overview:**
+
 * O objetivo do projeto era desenvolver um formulário usando ReactJS e CSS;
 * Nesse projeto foi utilizado elevação de estado e componentes controlados;
 * Utilizei do modal para mostrar as informações, sem o auxílio de bibliotecas;
